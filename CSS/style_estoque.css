@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.log {
+    width: 100%;
+    height: 50px;
+    background-color: #1C1C1C;
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Para garantir que fique sobre o conteúdo */
+}
+
+.imagem {
+    margin: 0;
+    padding: 0;
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+	margin-left: 10px;
+	margin-top: 7.5px;
+	padding: 0px;
+	height:35px;
+}
+
+/* Adiciona o estilo para o menu lateral */
+.sidebar {
+	margin-top:30px;
+    width: 15%;
+    height: 100%;
+    background-color: #363636;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    height: 100%;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Ajusta o conteúdo principal para evitar sobreposição com o menu lateral */
+.container {
+	margin-top: 55px;
+    margin-left: 15.3%; /* Deixe espaço suficiente para o menu lateral */
+    width: 82.5%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.pesq {
+    margin-top: 50px;
+}
+
+.add-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.add,
+.search {
+    width: 49.3%; /* 50% com uma pequena margem entre as caixas */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+	align-items: center;
+}
+
+form {
+    padding: 20px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	align-items: center;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+form label,
+form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+	align-items: center;
+}
+
+#total-value {
+    margin-top: 20px;
+}
+
+.list-search {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+}

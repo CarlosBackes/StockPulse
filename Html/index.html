@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<UTF-8>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\carlo\OneDrive\Área de Trabalho\Teste1\Estoque\CSS\style_estoque.css">
+</head>
+<body>
+
+	<div class="log">
+		<img class="imagem" src="C:\Users\carlo\OneDrive\Área de Trabalho\Teste1\Estoque\Imagens\stockpulse.png">
+	</div>
+
+	<!-- Menu Lateral -->
+	<div class="sidebar">
+		<ul>
+			<li><a href="#">Estoque</a></li>
+			<li><a href="#">Centrais de Estoque</a></li>
+			<li><a href="#">Transferir entre Centrais</a></li>
+			<li><a href="#">Importar XML</a></li>
+		</ul>
+	</div>
+
+    <div class="container">
+        <h1>Gerenciar Estoque</h1></br>
+        <div class="add-search">
+            <div class="add">
+                <form id="inventory-form">
+                    <h2>Adicionar Material/Produto</h2>
+                    <label for="item-name">Nome do Item:</label>
+                    <input type="text" id="item-name" required>
+                    <label for="item-quantity">Quantidade:</label>
+                    <input type="number" id="item-quantity" required>
+                    <label for="item-valor">Valor Unitário:</label>
+                    <input type="text" id="item-valor" required>
+                    <input type="submit" value="Adicionar" class="button">
+                </form>
+            </div>
+            <div class="search">
+                <form id="inventory-search">
+                    <h2>Buscar Material/Produto</h2>
+                    <label for="item-name-search">Nome do Item:</label>
+                    <input type="text" id="item-name-search" required>
+                    <input type="submit" value="Buscar" class="button">
+
+					<table class="list-search">
+						<thead>
+							<tr>
+								<th>Descrição</th>
+								<th>Quant.</th>
+								<th>V. Unit.</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody id="searchResult">
+							<!-- Os itens buscados serão exibidos aqui -->
+						</tbody>
+
+					</table>
+				</form>
+				
+            </div>
+        </div>
+		<div class="pesq">
+        <h2>Lista de Materiais/Produtos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="item-list">
+                <!-- Os itens adicionados serão exibidos aqui -->
+            </tbody>
+        </table>
+        <div id="total-value">Valor Total: R$ 0.00</div>
+		</div>
+	</div>
+
+    <script src="C:\Users\carlo\OneDrive\Área de Trabalho\Teste1\Estoque\js\script_estoque.js"></script>
+</body>
+</html>
